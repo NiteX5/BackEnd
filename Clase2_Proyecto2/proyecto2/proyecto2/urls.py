@@ -18,5 +18,6 @@ from django.contrib import admin
 from django.urls import path
 
 urlpatterns = [
-    path('', views.mostrarFormulario),
+    path('admin/', admin.site.urls),
+    path('', views.mostrarFormulario)
 ]
